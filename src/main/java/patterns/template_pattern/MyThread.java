@@ -1,8 +1,6 @@
 package patterns.template_pattern;
 
-/**
- * 通过start方法调用run方法,类似模板方法
- */
+
 public abstract class MyThread {
     abstract void run();
 

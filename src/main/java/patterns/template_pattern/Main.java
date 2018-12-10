@@ -1,5 +1,8 @@
 package patterns.template_pattern;
 
+/**
+ * 模板方法
+ */
 public class Main extends MyThread {
     @Override
     void run() {
