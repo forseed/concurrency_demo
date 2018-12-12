@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 /**
  * wait的简单应用
- * 控制线程个数
+ * 控制线程个数。
  */
 public class SimpleWaitExample {
     //容器类
