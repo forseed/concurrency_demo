@@ -13,34 +13,32 @@ public class SimpleProduceComsume2 {
 
     public void produce() {
         synchronized (LOCK) {
-            if (isProduce) {
+            while (isProduce) {
                 try {
                     LOCK.wait();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-            } else {
-                i++;
-                System.out.println(Thread.currentThread().getName() + ":P>>>" + i);
-                isProduce = true;
-                LOCK.notifyAll();
             }
+            i++;
+            System.out.println(Thread.currentThread().getName() + ":P>>>" + i);
+            isProduce = true;
+            LOCK.notifyAll();
         }
     }
 
     public void consume() {
         synchronized (LOCK) {
-            if (isProduce) {
-                System.out.println(Thread.currentThread().getName() + ":C>>>" + i);
-                isProduce = false;
-                LOCK.notifyAll();
-            } else {
+            while (!isProduce) {
                 try {
                     LOCK.wait();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
             }
+            System.out.println(Thread.currentThread().getName() + ":C>>>" + i);
+            isProduce = false;
+            LOCK.notifyAll();
         }
     }
 
