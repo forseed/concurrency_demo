@@ -11,7 +11,7 @@ import java.util.stream.Stream;
  * 控制线程个数
  */
 public class SimpleWaitExample {
-    //容器类S
+    //容器类
     private final static LinkedList<Control> CONTROLS = new LinkedList<>();
     //同时最多有5个线程可以工作
     private final static int MAX_WORKER = 5;
