@@ -14,11 +14,12 @@ public class ThreadException {
                 e.printStackTrace();
             }
         });
-        thread.start();
-        //使用api
+
         thread.setUncaughtExceptionHandler((t, e) -> {
             System.out.println(t);
             System.out.println(e);
         });
+
+        thread.start();
     }
 }
