@@ -14,6 +14,7 @@
     - [综合案例](src/main/java/demo/example)
       - [控制线程个数](src/main/java/demo/example/SimpleWaitExample.java)
       - [实现显示锁Lock](src/main/java/demo/example/lock)
+      - [简单线程池实现](src/main/java/demo/example/threadpool)
       
   - [**设计模式**](src/main/java/patterns)
   
