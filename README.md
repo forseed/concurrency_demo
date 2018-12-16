@@ -20,6 +20,7 @@
   
     - [策略模式](src/main/java/patterns/strategy_pattern)
     - [模板方法](src/main/java/patterns/template_pattern)
+    - [单例模式](src/main/java/patterns/singleton_pattern)
     
     
     
