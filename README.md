@@ -16,6 +16,7 @@
       - [控制线程个数](src/main/java/demo/example/SimpleWaitExample.java)
       - [实现显示锁Lock](src/main/java/demo/example/lock)
       - [简单线程池实现](src/main/java/demo/example/threadpool)
+      - [使用观察者模式监控线程生命周期](src/main/java/demo/example/observer_thread)
       
   - [**设计模式**](src/main/java/patterns)
   
