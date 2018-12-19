@@ -24,8 +24,9 @@
     - [模板方法](src/main/java/patterns/template_pattern)
     - [单例模式](src/main/java/patterns/singleton_pattern)
     - [观察者模式](src/main/java/patterns/observer_pattern)
-    - [单线程执行模式](src/main/java/patterns/single_thread_execution_pattern)
-    - [读写锁模式](src/main/java/patterns/read_write_pattern)
+    - [single threaded execution](src/main/java/patterns/single_thread_execution_pattern)
+    - [read write pattern](src/main/java/patterns/read_write_pattern)
+    - [guarded suspension pattern](src/main/java/patterns/guarded_suspension_pattern)
     
     
     
