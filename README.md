@@ -20,13 +20,13 @@
       
   - [**设计模式**](src/main/java/patterns)
   
-    - [策略模式](src/main/java/patterns/strategy_pattern)
-    - [模板方法](src/main/java/patterns/template_pattern)
-    - [单例模式](src/main/java/patterns/singleton_pattern)
-    - [观察者模式](src/main/java/patterns/observer_pattern)
-    - [single threaded execution](src/main/java/patterns/single_thread_execution_pattern)
-    - [read write pattern](src/main/java/patterns/read_write_pattern)
-    - [guarded suspension pattern](src/main/java/patterns/guarded_suspension_pattern)
+    - [Strategy Pattern](src/main/java/patterns/strategy_pattern)
+    - [Template Pattern](src/main/java/patterns/template_pattern)
+    - [Singleton Pattern](src/main/java/patterns/singleton_pattern)
+    - [Observer Pattern](src/main/java/patterns/observer_pattern)
+    - [Single Threaded Execution Pattern](src/main/java/patterns/single_thread_execution_pattern)
+    - [Read Write Pattern](src/main/java/patterns/read_write_pattern)
+    - [Guarded Suspension Pattern](src/main/java/patterns/guarded_suspension_pattern)
     
     
     
