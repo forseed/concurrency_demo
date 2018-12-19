@@ -12,6 +12,7 @@
     - [异常](src/main/java/demo/exception)
     - [线程组](src/main/java/demo/threadgroup)
     - [volatile](src/main/java/demo/volatiledemo)
+    - [lock](src/main/java/demo/lock)
     - [综合案例](src/main/java/demo/example)
       - [控制线程个数](src/main/java/demo/example/SimpleWaitExample.java)
       - [实现显示锁Lock](src/main/java/demo/example/lock)
