@@ -11,24 +11,24 @@ public class Gate {
     /**
      * 相当于临界值
      */
-    public void pass(String name, String address) {
+    public synchronized void pass(String name, String address) {
         this.count++;
         /**
          * 存在竞争
          */
         this.name = name;
         this.address = address;
-        verify();
+        pass();
     }
 
-    private void verify() {
+    private void pass() {
         if (name.charAt(0) != address.charAt(0)) {
             System.out.println("-------------BROKEN-------" + toString());
         }
     }
 
     @Override
-    public String toString() {
+    public synchronized String toString() {
         return "No." + count + ":" + name + "," + address;
     }
 }
