@@ -1,8 +1,7 @@
 package patterns.balking_pattern;
 
 /**
- * @author wangyang
- * @date 2018/12/21 0021
+ * 定期保存与修改保存
  */
 public class Main {
     public static void main(String[] args) {
