@@ -28,7 +28,8 @@
     - [Read Write Pattern](src/main/java/patterns/read_write_pattern)
     - [Guarded Suspension Pattern](src/main/java/patterns/guarded_suspension_pattern)
     - [Balking Pattern](src/main/java/patterns/balking_pattern)
-    - [Producer Consumer Pattern](src/main/java/patterns/producer_consumer)
+    - [Producer Consumer Pattern](src/main/java/patterns/producer_consumer_pattern)
+    - [Future Pattern](src/main/java/patterns/future_pattern)
     
     
     

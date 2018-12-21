@@ -1,4 +1,4 @@
-package patterns.producer_consumer;
+package patterns.producer_consumer_pattern;
 
 /**
  * @author wangyang
