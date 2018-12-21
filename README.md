@@ -28,6 +28,7 @@
     - [Single Threaded Execution Pattern](src/main/java/patterns/single_thread_execution_pattern)
     - [Read Write Pattern](src/main/java/patterns/read_write_pattern)
     - [Guarded Suspension Pattern](src/main/java/patterns/guarded_suspension_pattern)
+    - [Balking Pattern](src/main/java/patterns/balking_pattern)
     
     
     
