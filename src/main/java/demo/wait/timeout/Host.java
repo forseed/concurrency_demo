@@ -18,7 +18,7 @@ public class Host {
     }
 
     //评断状态后执行它
-    public synchronized void execute() throws InterruptedException, TimeoutException {
+    public synchronized void execute() throws InterruptedException {
         long start = System.currentTimeMillis();
         long end = start + timeout;
         while (!ready) {
