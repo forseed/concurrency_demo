@@ -33,7 +33,7 @@
     - [Future Pattern](src/main/java/patterns/future_pattern)
     - [Thread Per Message Pattern](src/main/java/patterns/thread_per_message_pattern)
     - [Worker Thread Pattern](src/main/java/patterns/worker_thread_pattern)
-    - [UML](src/main/java/patterns/uml)
+    - [**UML**](src/main/java/patterns/uml)
        - [thread_per_message](src/main/java/patterns/uml/thread_per_message.png)
        - [worker_thread](src/main/java/patterns/uml/worker_thread.png)
     
