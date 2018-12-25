@@ -17,6 +17,7 @@
       - [实现显示锁Lock](src/main/java/demo/example/lock)
       - [简单线程池实现](src/main/java/demo/example/threadpool)
       - [使用观察者模式监控线程生命周期](src/main/java/demo/example/observer_thread)
+      - [经典案例1](src/main/java/demo/example/BlackHole.java)
       
   - [**设计模式**](src/main/java/patterns)
   
