@@ -1,7 +1,8 @@
 package patterns.worker_thread_pattern;
 
 /**
- * 简单线程池
+ * worker thread pattern
+ * 一个简单的线程池
  */
 public class Main {
     public static void main(String[] args) {
