@@ -10,6 +10,7 @@ import java.util.Random;
 public class ClientThread extends Thread {
     private final Channel channel;
     private static final Random random = new SecureRandom();
+    private volatile Boolean terminated = false;
 
     public ClientThread(String name, Channel channel) {
         super(name);
@@ -19,13 +20,22 @@ public class ClientThread extends Thread {
     @Override
     public void run() {
         try {
-            for (int i = 0; true; i++) {
+            for (int i = 0; !terminated; i++) {
                 Request request = new Request(this.getName(), i);
-                channel.putRequest(request);
-                Thread.sleep(random.nextInt(1000));
+                try {
+                    channel.putRequest(request);
+                    Thread.sleep(random.nextInt(1000));
+                } catch (InterruptedException e) {
+                    terminated = true;
+                }
             }
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+        } finally {
+            System.out.println(Thread.currentThread().getName() + " is terminated.");
         }
+    }
+
+    public void stopThread() {
+        terminated = true;
+        this.interrupt();
     }
 }

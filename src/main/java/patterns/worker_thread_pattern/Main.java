@@ -9,8 +9,24 @@ public class Main {
         Channel channel = new Channel(5);
         channel.startWorkers();
 
-        new ClientThread("Alice", channel).start();
-        new ClientThread("Demo", channel).start();
-        new ClientThread("Seed", channel).start();
+        ClientThread alice = new ClientThread("Alice", channel);
+        ClientThread demo = new ClientThread("Demo", channel);
+        ClientThread seed = new ClientThread("Seed", channel);
+
+        alice.start();
+        demo.start();
+        seed.start();
+
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        alice.stopThread();
+        demo.stopThread();
+        seed.stopThread();
+
+        channel.stopAllWorkers();
     }
 }

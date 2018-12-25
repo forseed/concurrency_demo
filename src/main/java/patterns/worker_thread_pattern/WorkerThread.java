@@ -7,6 +7,7 @@ package patterns.worker_thread_pattern;
 public class WorkerThread extends Thread {
     private final Channel channel;
 
+    private volatile boolean terminated = false;
 
     public WorkerThread(String name, Channel channel) {
         super(name);
@@ -15,8 +16,22 @@ public class WorkerThread extends Thread {
 
     @Override
     public void run() {
-        while (true) {
-            channel.takeRequest().execute();
+        try {
+            while (!terminated) {
+                try {
+                    Request request = channel.takeRequest();
+                    request.execute();
+                } catch (InterruptedException e) {
+                    terminated = true;
+                }
+            }
+        } finally {
+            System.out.println(Thread.currentThread().getName() + " is terminated.");
         }
+    }
+
+    public void stopThread() {
+        terminated = true;
+        this.interrupt();
     }
 }

@@ -22,7 +22,7 @@ public class Request {
         try {
             Thread.sleep(random.nextInt(1000));
         } catch (InterruptedException e) {
-            e.printStackTrace();
+
         }
     }
 

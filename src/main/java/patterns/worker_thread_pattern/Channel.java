@@ -35,28 +35,26 @@ public class Channel {
         }
     }
 
-    public synchronized void putRequest(Request request) {
+    public synchronized void putRequest(Request request) throws InterruptedException {
         while (requestQueue.size() >= MAX_REQUEST) {
-            try {
-                this.wait();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+            this.wait();
         }
         requestQueue.addLast(request);
         this.notifyAll();
     }
 
-    public synchronized Request takeRequest() {
+    public synchronized Request takeRequest() throws InterruptedException {
         while (requestQueue.size() <= 0) {
-            try {
-                this.wait();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+            this.wait();
         }
         Request request = requestQueue.removeFirst();
         this.notifyAll();
         return request;
+    }
+
+    public void stopAllWorkers() {
+        for (int i = 0; i < size; i++) {
+            threadPool.get(i).stopThread();
+        }
     }
 }
