@@ -34,8 +34,10 @@ public class Data {
     }
 
     private void doSave() throws IOException {
-        Writer writer = new FileWriter(filename);
-        writer.write(content);
-        writer.close();
+        try (Writer writer = new FileWriter(filename, true)) {
+            writer.write(content);
+            writer.write("\n");
+            writer.flush();
+        }
     }
 }
