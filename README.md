@@ -35,6 +35,7 @@
     - [Thread Per Message Pattern](src/main/java/patterns/thread_per_message_pattern)
     - [Worker Thread Pattern](src/main/java/patterns/worker_thread_pattern)
     - [Thread Specific Storage Pattern](src/main/java/patterns/thread_specific_storage_pattern)
+    - [Future Pattern](src/main/java/patterns/future_pattern)
     
     
     
