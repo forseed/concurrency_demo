@@ -13,6 +13,8 @@
     - [线程组](src/main/java/demo/threadgroup)
     - [lock](src/main/java/demo/lock)
     - [ThreadLocal](src/main/java/demo/threadlocal)
+    - [并发包](src/main/java/demo/concurrent)
+        - [CountDownLatch](src/main/java/demo/concurrent/countdown)
     - [综合案例](src/main/java/demo/example)
       - [控制线程个数](src/main/java/demo/example/SimpleWaitExample.java)
       - [实现显示锁Lock](src/main/java/demo/example/lock)
@@ -35,7 +37,6 @@
     - [Thread Per Message Pattern](src/main/java/patterns/thread_per_message_pattern)
     - [Worker Thread Pattern](src/main/java/patterns/worker_thread_pattern)
     - [Thread Specific Storage Pattern](src/main/java/patterns/thread_specific_storage_pattern)
-    - [Future Pattern](src/main/java/patterns/future_pattern)
-    
+    - [Future Pattern](src/main/java/patterns/future_pattern)    
     
     
