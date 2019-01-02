@@ -1,4 +1,4 @@
-package demo.deadlock.eating;
+package demo.lock.deadlock.eating;
 
 /**
  * @author wangyang

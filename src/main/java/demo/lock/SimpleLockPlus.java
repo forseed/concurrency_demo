@@ -1,7 +1,7 @@
 package demo.lock;
 
 /**
- * 改进简单的lock
+ * 简单的lock
  */
 public class SimpleLockPlus {
     private long locks = 0;

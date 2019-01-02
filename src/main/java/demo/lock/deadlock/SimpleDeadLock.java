@@ -1,4 +1,4 @@
-package demo.deadlock;
+package demo.lock.deadlock;
 
 /**
  * 一个简单的死锁案例

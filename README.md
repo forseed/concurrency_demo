@@ -3,17 +3,19 @@
 
 
 # 目录
-  - [**DEMO**](src/main/java/demo)
-  
-    - [死锁](src/main/java/demo/deadlock)
+  - [**DEMO**](src/main/java/demo)  
     - [停止线程的几种方式](src/main/java/demo/stop)
     - [wait](src/main/java/demo/wait)
     - [addShutdownHook](src/main/java/demo/hook)
     - [异常](src/main/java/demo/exception)
     - [线程组](src/main/java/demo/threadgroup)
     - [lock](src/main/java/demo/lock)
+        - [死锁](src/main/java/demo/lock/deadlock)
+        - [使用CAS实现lock](src/main/java/demo/lock/caslock)
+        - [使用wait实现lock](src/main/java/demo/lock/SimpleLockPlus.java)
     - [ThreadLocal](src/main/java/demo/threadlocal)
     - [并发包](src/main/java/demo/concurrent)
+        - [atomic](src/main/java/demo/concurrent/atomic)
         - [CountDownLatch](src/main/java/demo/concurrent/countdown)
     - [综合案例](src/main/java/demo/example)
       - [控制线程个数](src/main/java/demo/example/SimpleWaitExample.java)
