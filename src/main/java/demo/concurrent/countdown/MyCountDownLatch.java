@@ -1,11 +1,11 @@
 package demo.concurrent.countdown;
 
-public class MyCountDown {
+public class MyCountDownLatch {
     private final int total;
 
     private int count;
 
-    public MyCountDown(int total) {
+    public MyCountDownLatch(int total) {
         this.total = total;
     }
 
