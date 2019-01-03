@@ -4,7 +4,6 @@
 
 # 目录
   - [**DEMO**](src/main/java/demo)  
-    - [停止线程的几种方式](src/main/java/demo/stop)
     - [wait](src/main/java/demo/wait)
     - [addShutdownHook](src/main/java/demo/hook)
     - [异常](src/main/java/demo/exception)
@@ -18,11 +17,13 @@
         - [atomic](src/main/java/demo/concurrent/atomic)
         - [CountDownLatch](src/main/java/demo/concurrent/countdown)
     - [综合案例](src/main/java/demo/example)
+      - [停止线程的几种方式](src/main/java/demo/example/stop)
       - [控制线程个数](src/main/java/demo/example/SimpleWaitExample.java)
       - [实现显示锁Lock](src/main/java/demo/example/lock)
       - [简单线程池实现](src/main/java/demo/example/threadpool)
       - [使用观察者模式监控线程生命周期](src/main/java/demo/example/observer_thread)
       - [经典案例 BlackHole](src/main/java/demo/example/BlackHole.java)
+      - [几种同步方式性能比较](src/main/java/demo/example/CompareCounter.java)
       
   - [**设计模式**](src/main/java/patterns)
   

@@ -1,4 +1,4 @@
-package demo.stop;
+package demo.example.stop;
 
 /**
  * 设置守护线程

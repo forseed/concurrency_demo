@@ -1,22 +1,27 @@
-package demo.stop;
+package demo.example.stop;
 
 /**
- * 定义标记
+ * 配合interrupt
  */
-public class MethodOne {
+public class MethodTwo {
     private static class Worker extends Thread {
-        private volatile boolean start = true;
 
         @Override
         public void run() {
-            while (start) {
-                // do something
+            while (true) {
+                if (Thread.interrupted()) {
+                    break;
+                }
+
+//                try {
+//                    Thread.sleep(1000);
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                    break;
+//                }
             }
         }
 
-        public void shotdown() {
-            start = false;
-        }
     }
 
     public static void main(String[] args) {
@@ -30,6 +35,6 @@ public class MethodOne {
             e.printStackTrace();
         }
 
-        worker.shotdown();
+        worker.interrupt();
     }
 }
