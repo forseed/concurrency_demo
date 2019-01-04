@@ -17,6 +17,7 @@
         - [atomic](src/main/java/demo/concurrent/atomic)
         - [CountDownLatch](src/main/java/demo/concurrent/countdown)
         - [CyclicBarrier](src/main/java/demo/concurrent/cyclicbarrier)
+        - [Exchanger](src/main/java/demo/concurrent/exchanger)
     - [综合案例](src/main/java/demo/example)
       - [停止线程的几种方式](src/main/java/demo/example/stop)
       - [控制线程个数](src/main/java/demo/example/SimpleWaitExample.java)
