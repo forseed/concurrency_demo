@@ -3,7 +3,7 @@ package demo.lock;
 /**
  * 简单的lock
  */
-public class SimpleLockPlus {
+public class WaitNotifyLock {
     private long locks = 0;
 
     private Thread thread;

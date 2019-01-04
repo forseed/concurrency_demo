@@ -1,4 +1,4 @@
-package demo.lock.caslock;
+package demo.lock;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -7,12 +7,10 @@ public class CASLock {
 
     private Thread current;
 
-    public void lock() throws LockException {
-        boolean res = atomicInteger.compareAndSet(0, 1);
-        if (!res) {
-            throw new LockException("has lock..");
-        }
+    public void lock() {
+        while (!atomicInteger.compareAndSet(0, 1)) {
 
+        }
         current = Thread.currentThread();
     }
 
@@ -26,3 +24,6 @@ public class CASLock {
         }
     }
 }
+
+
+
