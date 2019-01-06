@@ -31,6 +31,7 @@
       - [使用观察者模式监控线程生命周期](src/main/java/demo/example/observer_thread)
       - [经典案例 BlackHole](src/main/java/demo/example/BlackHole.java)
       - [几种同步方式性能比较](src/main/java/demo/example/CompareCounter.java)
+      - [有3个线程ABC,循环输出ABC](src/main/java/demo/example/printabc)
       
   - [**设计模式**](src/main/java/patterns)
   
