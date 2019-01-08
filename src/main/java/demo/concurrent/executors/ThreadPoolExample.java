@@ -8,7 +8,7 @@ import java.util.stream.IntStream;
 /**
  * 创建线程池的多种方式
  */
-public class ExecutorsExample {
+public class ThreadPoolExample {
     public static void main(String[] args) throws InterruptedException {
 //        useThreadPoolExecutor();
 //        useCachedThreadPool();
