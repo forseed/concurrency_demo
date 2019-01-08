@@ -24,6 +24,7 @@
         - [Condition](src/main/java/demo/concurrent/condition)
         - [ForkJoin](src/main/java/demo/concurrent/forkjoin)
         - [Phaser](src/main/java/demo/concurrent/phaser)
+        - [Executors](src/main/java/demo/concurrent/executors)
     - [综合案例](src/main/java/demo/example)
       - [停止线程的几种方式](src/main/java/demo/example/stop)
       - [控制线程个数](src/main/java/demo/example/SimpleWaitExample.java)
