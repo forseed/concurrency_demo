@@ -6,6 +6,7 @@
   - [**DEMO**](src/main/java/demo)  
     - [wait](src/main/java/demo/wait)
     - [addShutdownHook](src/main/java/demo/hook)
+    - [异常](src/main/java/demo/exception)
     - [线程组](src/main/java/demo/threadgroup)
     - [lock](src/main/java/demo/lock)
         - [死锁](src/main/java/demo/lock/deadlock)
