@@ -14,7 +14,8 @@ public class ThreadPoolExample {
 //        useCachedThreadPool();
 //        useFixedThreadPool();
 //        useSingleThreadExecutor();
-        useWorkStealingPool();
+//        useWorkStealingPool();
+        useScheduledThreadPool();
     }
 
     /**
@@ -117,5 +118,15 @@ public class ThreadPoolExample {
                 e.printStackTrace();
             }
         });
+    }
+
+    /**
+     * corePoolSize, Integer.MAX_VALUE, 0, NANOSECONDS,
+     * new DelayedWorkQueue()
+     */
+    private static void useScheduledThreadPool() {
+//        ScheduledExecutorService executor = Executors.newScheduledThreadPool(2);
+        ScheduledExecutorService executor = new ScheduledThreadPoolExecutor(2);
+        executor.scheduleAtFixedRate(() -> System.out.println("hello"), 1, 2, TimeUnit.SECONDS);
     }
 }
