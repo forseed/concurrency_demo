@@ -51,6 +51,10 @@
     - [Worker Thread Pattern](src/main/java/patterns/worker_thread_pattern)
     - [Future Pattern](src/main/java/patterns/future_pattern)    
     - [Two Phase Termination Pattern](src/main/java/patterns/two_phase_termination_pattern)    
-    - [Active Object Pattern](src/main/java/patterns/active_object_pattern)    
+    - [Active Object Pattern](src/main/java/patterns/active_object_pattern)  
+    
+   - [**数据结构**](src/main/java/datastructure)  
+        - [LinkedList](src/main/java/datastructure/LinkedList.java)
+        - [PriorityLinkedList](src/main/java/datastructure/PriorityLinkedList.java)
     
     
